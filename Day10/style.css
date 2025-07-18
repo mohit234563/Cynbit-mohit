@@ -1,0 +1,103 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"], 
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #2575fc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  display: block;
+}
+
+.strength-meter {
+  height: 5px;
+  width: 100%;
+  background: #ddd;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.strength-meter.fill-weak {
+  background: red;
+}
+
+.strength-meter.fill-medium {
+  background: orange;
+}
+
+.strength-meter.fill-strong {
+  background: green;
+}
